@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+* {
+  margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family:  "Roboto", sans-serf;
+}
+
+nav  {
+  color: #4756df;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+  background-color: white;
+  border-radius: 4px;
+  padding: 1rem;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 70rem;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 2rem;
+  
+}
+.main{
+    width: 60rem;
+    height: 60rem;
+    
+}
+  
+.imgs1{ 
+    height: 6.25rem;
+    width: 6.25rem;
+    border-radius: .30rem;
+}
+  </style>
+</head>
+<body>
+    <nav>
+        <h1>My Gallary</h1>
+      
+  </nav>
+  <section class="container" >
+    <button id="img" class="btn"><img class="main imgs1 " name="imgs"
+      src="./0708-2019-0327197491184814535751-01.jpeg" /></button>
+   
+</section>
+     
+<script>
+    let open = document.getElementsByClassName('btn');
+open[0].addEventListener ('click', function() {
+    let fullimg = document.getElementsByClassName('imgs1')[0];
+    fullimg.classList.remove('imgs1');
+})
+
+</script>
+
+</body>
+</html>
